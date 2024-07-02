@@ -23,7 +23,7 @@ export async function main(){
         console.log(`Words counter: ${analysis.wordCount}`);
         console.log(`Chars counter: ${analysis.letterCount}`);
         console.log(`Whitespaces counter: ${analysis.spaceCount}`);
-        console.log('Words repeated more than 10 times:');
+        console.log('Words repeated more than 10 times (case sensitive):');
         for (const [word, count] of Object.entries(analysis.repeatedWords)) {
             console.log(`${word}: ${count} volte`);
         }

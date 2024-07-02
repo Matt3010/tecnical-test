@@ -16,9 +16,10 @@ export default class FileHandler {
         if (this.isUrl(filePath)) {
             // Get content
             const response = await axios.get(filePath);
+            // Return content
             return response.data;
         } else {
-            // Get content
+            // Return content
             return fs.readFileSync(path.resolve(filePath), 'utf-8');
         }
     }
